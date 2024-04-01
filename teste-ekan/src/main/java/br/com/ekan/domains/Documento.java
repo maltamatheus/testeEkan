@@ -2,11 +2,12 @@ package br.com.ekan.domains;
 
 import java.time.LocalDateTime;
 
+import javax.persistence.Column;
+import javax.persistence.Embeddable;
+
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 import br.com.ekan.domains.enums.EnumTipoDocumento;
-import jakarta.persistence.Column;
-import jakarta.persistence.Embeddable;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

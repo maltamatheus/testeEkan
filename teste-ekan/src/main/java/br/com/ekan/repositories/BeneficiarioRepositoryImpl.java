@@ -5,6 +5,10 @@ import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Map;
 
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.transaction.Transactional;
+
 import org.springframework.stereotype.Repository;
 import org.springframework.util.ReflectionUtils;
 
@@ -13,9 +17,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import br.com.ekan.domains.Beneficiario;
 import br.com.ekan.domains.Documento;
 import br.com.ekan.domains.enums.EnumStatusRemove;
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.PersistenceContext;
-import jakarta.transaction.Transactional;
 
 @Repository
 public class BeneficiarioRepositoryImpl implements BeneficiarioRepository {
