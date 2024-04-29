@@ -15,7 +15,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 		http.httpBasic()
 		    .and()
 		    .authorizeHttpRequests()
-		    		.antMatchers("/testes").permitAll()
 		       .anyRequest().authenticated()
 			.and()
 				.sessionManagement()
