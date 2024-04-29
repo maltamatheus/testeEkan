@@ -17,6 +17,8 @@ import org.springframework.web.bind.annotation.RestController;
 import br.com.ekan.domains.Beneficiario;
 import br.com.ekan.domains.enums.EnumStatusRemove;
 import br.com.ekan.repositories.BeneficiarioRepositoryImpl;
+import springfox.documentation.annotations.ApiIgnore;
+
 
 @RestController
 @RequestMapping("/teste-ekan/beneficiarios/")
