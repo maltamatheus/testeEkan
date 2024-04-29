@@ -56,7 +56,7 @@ public class BeneficiarioController {
 		return ResponseEntity.status(HttpStatus.NOT_FOUND).body(EnumStatusRemove.BENEFICIARIO_NAO_ENCONTRADO);
 	}
 	
-	@PutMapping("cadastrar")
+	@PutMapping("atualizar")
 	public ResponseEntity<Beneficiario> atualizarBeneficiario(@RequestBody Beneficiario beneficiario){
 		Beneficiario beneficiarioSaida = beneficiarioRepository.update(beneficiario);
 		
